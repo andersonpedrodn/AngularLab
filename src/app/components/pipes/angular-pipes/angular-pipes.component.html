@@ -1,5 +1,6 @@
 <div class="class">
     <ul>
+        <li>customString: {{ "teste" | customString : 'upper' }}</li>
         <li>
             uppercase: {{ "Algum texto" | uppercase }}
         </li>
@@ -12,6 +13,18 @@
         <li>
             date: {{  today | date: "dd/MM/yyyy"}}
         </li>
+
+        <li>
+            currency: {{ 200.5 | currency: "BRL"}}
+        </li>
+        <li>
+            number: {{ 2000.50 | number: "1-1-1"}}
+        </li>
+        <li>
+            percent: {{ 0.15 | percent: "1-0-4" }}
+        </li>
+        
+
     </ul>
     
     
