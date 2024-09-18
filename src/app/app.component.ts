@@ -8,11 +8,12 @@ import { TemplateVariablesComponent } from './components/template/template-varia
 import { TemplateControlFlowComponent } from './components/template/template-control-flow/template-control-flow.component';
 import { TemplateDeferrableViewsComponent } from './components/template/template-deferrable-views/template-deferrable-views.component';
 import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai-ou-mae/pai-ou-mae.component';
+import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-pipes.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent, TemplateDeferrableViewsComponent,PaiOuMaeComponent],
+  imports: [ RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent, TemplateDeferrableViewsComponent,PaiOuMaeComponent, AngularPipesComponent],
   styles: [`h1 { color:green;}`,],
   template: `
   <!--router-outlet></router-outlet> -->
@@ -24,6 +25,8 @@ import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai
   
     <h1>Estudos</h1>
     <app-pai-ou-mae />
+    
+    <app-angular-pipes />
   `,
   
 })
