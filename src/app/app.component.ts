@@ -9,25 +9,29 @@ import { TemplateControlFlowComponent } from './components/template/template-con
 import { TemplateDeferrableViewsComponent } from './components/template/template-deferrable-views/template-deferrable-views.component';
 import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai-ou-mae/pai-ou-mae.component';
 import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-pipes.component';
+import { ReactiveFormsComponent } from './components/forms/reactive-forms/reactive-forms.component';
+import { TemplateDrivenFormsComponent } from './components/forms/template-driven-forms/template-driven-forms.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent, TemplateDeferrableViewsComponent,PaiOuMaeComponent, AngularPipesComponent],
+  imports: [ RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent, TemplateDeferrableViewsComponent,PaiOuMaeComponent, AngularPipesComponent, ReactiveFormsComponent, TemplateDrivenFormsComponent],
   styles: [`h1 { color:green;}`,],
   template: `
-  <!--router-outlet></router-outlet> -->
+  <!-- <router-outlet></router-outlet> -->
   
-  <!--<app-template-binding />-->
-  <!--<app-template-variables /> -->
-  <!--<app-template-control-flow /> -->
-  <!--<app-template-deferrable-views />-->
+  <!-- <app-template-binding /> -->
+  <!-- <app-template-variables /> -->
+  <!-- <app-template-control-flow /> -->
+  <!-- <app-template-deferrable-views /> -->
   
     <h1>Estudos</h1>
     <app-pai-ou-mae />
     
     <app-angular-pipes />
-  `,
+    <app-reactive-forms />
+    <app-template-driven-forms />
+    `,
   
 })
 export class AppComponent {
